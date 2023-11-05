@@ -1,0 +1,88 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6F4E37;
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size:175%;
+  font-family:'Arial''sans-serif';
+}
+
+li a:hover {
+  background-color: #FFB3E6;
+}
+hr.rounded {
+  border-top: 10px solid #FFFFFF;
+}
+body {
+  background-color: #F7E1EC;
+}
+h1.Body {
+  font-family: Futura, sans-serif;
+  font-size: 200%;
+  text-align: center;
+  font-weight: bold;
+{
+  p1.About { 
+    font-family: Futura, sans-serif;
+    font-size: 300%;
+    text-align: center;
+    font-weight: bold;
+    
+  }
+
+
+  {box-sizing: border-box}
+
+  /* Set height of body and the document to 100% */
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+
+  /* Style tab links */
+  .tablink {
+    background-color: #6F4E37;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+
+  .tablink:hover {
+    background-color: #777;
+  }
+
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+
+  #Coffee {background-color: #FFB3E6;}
+  #Drinks {background-color: #FFB3E6;}
+  #Food {background-color: #FFB3E6;}
+  #Dessert {background-color: #FFB3E6;}

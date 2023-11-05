@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="4.4Cafe.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<ul>
+  <li><a href="4.4CatCafeHome.html">Home</a></li>
+  <li><a class="active" href="4.4Menu.html">Menu</a></li>
+  <li><a href="4.4Contact.html">Contact</a></li>
+  <li><a href="4.4About.html">About Us</a></li>
+</ul>
+<h1>MENU</h1>
+  <button class="tablink" onclick="openPage('Coffee', this, 'pink')">Coffee</button>
+  <button class="tablink" onclick="openPage('Drinks', this, 'pink')" id="defaultOpen">Drinks</button>
+  <button class="tablink" onclick="openPage('Food', this, 'pink')">Food</button>
+  <button class="tablink" onclick="openPage('Dessert', this, 'pink')">Dessert</button>
+
+  <div id="Coffee" class="tabcontent">
+  <center><img src="coffeemenu.png" width = "1000" height = "612">
+  </div>
+
+  <div id="Drinks" class="tabcontent">
+    <center><img src="drinksmenu.png" width="1000" height="612">
+    
+  </div>
+
+  <div id="Food" class="tabcontent">
+    <center><img src="foodmenu.png" width="1000" height = "612">
+  </div>
+
+  <div id="Dessert" class="tabcontent">
+    <center><img src ="dessertmenu.png" width = "1000" height = "612">
+  </div>
+
+  <script>
+  function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
